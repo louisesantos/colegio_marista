@@ -1,0 +1,8 @@
+*.lock
+
+img
+node_modules
+layout/Marista_Hotsite_Home_03.psd
+layout/Marista_Hotsite_Home_mobile.psd
+
+
