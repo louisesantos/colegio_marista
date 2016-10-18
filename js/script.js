@@ -25,13 +25,36 @@ window.onload = function() {
 		var n = $(elem).index()
 		var li = $('.list-text > li:eq('+ n + ')')
 
+		var icPlus = 'url("img/plus.png")';
+		var icMinus = 'url("img/minus.png")';
+
+		$('.btn-accordion').css('background-image',icPlus)
+
 		if ($(li).hasClass('active')) {
 			$('.list-text > li:eq('+ n + ')  > article > div.article').hide()
 			$(li).removeClass('active')
+			$('.list-text > li:eq('+ n + ')  > article > div.title > .btn-accordion').css('background-image',icPlus)
 		} else {
 			$('.list-text > li:eq('+ n + ')  > article > div.article').show()
 			$(li).addClass('active')
+			$('.list-text > li:eq('+ n + ')  > article > div.title > .btn-accordion').css('background-image',icMinus)
 		}
+	})
+
+	//Click inscrição
+	$("#btn_inscricao").on('click', function() {
+		var nome = document.getElementById('nome').value;
+		var email = document.getElementById('email').value;
+
+		if (nome == '' || email == '') {
+			alert('Por favor, preencha os campos Nome e E-mail.');
+			$('#nome').focus();
+			return false;
+		}
+
+		window.open('http://inscricoes.marista.edu.br/home','_blank');
+
+		return true;
 	})
 
 	var dots = false;

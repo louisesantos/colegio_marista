@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Colégio Marista</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta http-equiv="Content-Language" content="pt-br">
     <!-- SEO -->
     <meta name="description" content="Colégio Marista">
     <meta name="author" content="Move Digital">
@@ -22,6 +22,9 @@
     <meta property="og:email" content="contato@colegiomarista.com.br">
     <meta property="og:image" content="http://www.colegiomarista.com.br/img/logo.png">
     <meta property="og:site_name" content="Colégio Marista">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" />
@@ -81,28 +84,28 @@
 		<div class="container">
 			<nav>
 				<div class="col col-logo">
-					<a href="index.html">
+					<a href="http://marista.edu.br/domsilverio/" title="Marista Dom Silvério">
 						<img alt="Logo Colégio Marista" src="img/logo.png" class="logo" />
 					</a>
 				</div>
 				<div class="col social">
 					<ul class="menu">
 						<li>
-							<a href="http://fb.com/colegiomarista" target="_blank">
+							<a href="http://http://facebook.com/DomSilverioBH" target="_blank" title="Facebook">
 								<svg class="icon">
 									<use xlink:href="#ic-facebook"></use>
 								</svg>
 							</a>
 						</li>
-						<li>
-							<a href="#" target="_blank">
+						<!--<li>
+							<a href="https://br.linkedin.com/company/grupo-marista" target="_blank" title="Linkedin">
 								<svg class="icon">
 									<use xlink:href="#ic-linkedin"></use>
 								</svg>
 							</a>
-						</li>
+						</li>-->
 						<li>
-							<a href="#" target="_blank">
+							<a href="https://www.instagram.com/maristadomsilveriobh/" target="_blank" title="Instagram">
 								<svg class="icon">
 									<use xlink:href="#ic-instagram"></use>
 								</svg>
@@ -118,21 +121,21 @@
 		<nav>
 			<ul class="menu">
 				<li>
-					<a href="http://fb.com/colegiomarista" target="_blank">
+					<a href="http://fb.com/colegiomarista" target="_blank" title="Facebook">
 						<svg class="icon">
 							<use xlink:href="#ic-facebook"></use>
 						</svg>
 					</a>
 				</li>
-				<li>
-					<a href="#" target="_blank">
+				<!--<li>
+					<a href="https://br.linkedin.com/company/grupo-marista" target="_blank" title="Linkedin">
 						<svg class="icon">
 							<use xlink:href="#ic-linkedin"></use>
 						</svg>
 					</a>
-				</li>
+				</li>-->
 				<li>
-					<a href="#" target="_blank">
+					<a href="https://www.instagram.com/maristadomsilveriobh/" target="_blank" title="Instagram">
 						<svg class="icon">
 							<use xlink:href="#ic-instagram"></use>
 						</svg>
@@ -154,9 +157,11 @@
 				<form class="form-hero">
 					<small>* Todos os campos são obrigatórios</small>
 					<fieldset>
+						<label for="nome">Nome</label>
 						<input type="text" name="nome" id="nome" placeholder="*Nome" class="input" />
+						<label for="email">E-mail</label>
 						<input type="text" name="email" id="email" placeholder="*Email" class="input" />
-						<input type="button" name="inscricao" class="btn btn-yellow btn-inscricao" />
+						<input type="button" name="inscricao" id="btn_inscricao" class="btn btn-yellow btn-inscricao" />
 					</fieldset>
 				</form>
 			</div>
@@ -184,7 +189,7 @@
 									<h2 class="yellow">cada vez mais</h2>
 									<h2 class="blue">dedicado</h2>
 								</hgroup>
-								<a class="btn-accordion"></a>
+								<a class="btn-accordion" title="Botão de Accordion"></a>
 							</div>
 							<div class="article">
 								<b>SIMA – Sistema Marista de Avaliação</b><br>
@@ -212,7 +217,7 @@
 									<h2 class="yellow">cada vez mais</h2>
 									<h2 class="blue">humano</h2>
 								</hgroup>
-								<a class="btn-accordion"></a>
+								<a class="btn-accordion" title="Botão de Accordion"></a>
 							</div>
 							<div class="article">
 								<b>VEM - Voluntáriado Estudantil Marista</b><br>
@@ -234,7 +239,7 @@
 									<h2 class="yellow">cada vez mais</h2>
 									<h2 class="blue">atualizado</h2>
 								</hgroup>
-								<a class="btn-accordion"></a>
+								<a class="btn-accordion" title="Botão de Accordion"></a>
 							</div>
 							<div class="article">
 								<b>SeAC - Serviço de Arte e Cultura</b><br>
@@ -258,16 +263,14 @@
 									<h2 class="yellow">cada vez mais</h2>
 									<h2 class="blue">consciente</h2>
 								</hgroup>
-								<a class="btn-accordion"></a>
+								<a class="btn-accordion" title="Botão de Accordion"></a>
 							</div>
 							<div class="article">
-								<p>
-									<b>Marisa Social</b><br>
-									<p>A atenção às questões sociais sempre fez parte da história dos Maristas. Dentre nossos pilares, destacam-se a luta por direitos humanos das crianças, adolescentes e jovens e a busca pela qualificação profissional e inserção no mercado de trabalho de jovens, em parceria com a Petrobras.
-									</p><br>
-									<b>MMS - Missão Marista de Solidariedade</b><br>
-									<p>Projeto pastoral de evangelização por meio da transformação social. Tem como objetivo despertar no estudante o protagonismo a partir do encontro com o outro, por meio de visitas a comunidades em situação de vulnerabilidade social.
-								</p>
+								<b>Marista Social</b><br>
+								<p>A atenção às questões sociais sempre fez parte da história dos Maristas. Dentre nossos pilares, destacam-se a luta por direitos humanos das crianças, adolescentes e jovens e a busca pela qualificação profissional e inserção no mercado de trabalho de jovens, em parceria com a Petrobras.
+								</p><br>
+								<b>MMS - Missão Marista de Solidariedade</b><br>
+								<p>Projeto pastoral de evangelização por meio da transformação social. Tem como objetivo despertar no estudante o protagonismo a partir do encontro com o outro, por meio de visitas a comunidades em situação de vulnerabilidade social.</p>
 							</div>
 						</article>
 					</li>
@@ -343,10 +346,10 @@
 			<div class="container">
 				<h1><span class="t-img t-galeria"></span></h1>
 				<div class="carousel">
-				  	<img class="carousel-cell" src="img/ft-1.png" alt="" />
-				  	<img class="carousel-cell" src="img/ft-2.png" alt="" />
-				  	<img class="carousel-cell" src="img/ft-3.png" alt="" />
-				  	<img class="carousel-cell" src="img/ft-4.png" alt="" />
+				  	<img class="carousel-cell" src="img/ft-1.png" alt="Foto 1 - Galeria" />
+				  	<img class="carousel-cell" src="img/ft-2.png" alt="Foto 2 - Galeria" />
+				  	<img class="carousel-cell" src="img/ft-3.png" alt="Foto 3 - Galeria" />
+				  	<img class="carousel-cell" src="img/ft-4.png" alt="Foto 4 - Galeria" />
 				</div>
 			</div>
 		</div>
@@ -355,9 +358,10 @@
 		<div class="item localizacao">
 			<div class="container">
 				<h1><span class="t-img t-localizacao"></span></h1>
-				<p>Rua Lavras, 225 - São Pedro, Belo Horzonte - MG</p>
-				<form>
+				<p>Rua Lavras, 225 - São Pedro, Belo Horizonte - MG</p>
+				<form class="form-localizacao">
 					<fieldset>
+						<label for="origem">Endereço de origem</label>
 						<input type="text" name="origem" id="origem" placeholder="Endereço de origem" class="input" />
 						<input type="button" class="btn btn-blue btn-rota" name="tracar_rota" onclick="findRoute()" />
 					</fieldset>
@@ -381,7 +385,7 @@
 			</div>
 			<div class="col right">
 				<p>Desenvolvido por 
-					<a href="http://3aworldwide.com.br/" class="logo3a">
+					<a href="http://3aworldwide.com.br/" class="logo3a" title="Logo 3A">
 						<svg class="icon">
 							<use xlink:href="#ic-logo3a"></use>
 						</svg>
@@ -405,6 +409,17 @@
 
 	<!-- JS -->
 	<script type="text/javascript" src="root/js/main.min.js"></script>
+
+	<!-- RdIntegration -->
+	<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"></script> 
+	<script type="text/javascript">
+	var meus_campos = {
+	'nome': 'nome',
+	'email': 'email'
+	};
+	options = { fieldMapping: meus_campos };
+	RdIntegration.integrate('992c575c6eecb23e1b9380d69059b97a', 'Inscrição', options); 
+	</script>
 		
 </body>
 </html>

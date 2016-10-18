@@ -1,0 +1,113 @@
+
+Geral
+
+- O site está extremamente pesado, tanto em mobile como em desktop. 
+https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fcolegiomarista.esy.es%2F&tab=mobile
+
+Imagens ja foram otimizadas.
+
+==================
+
+- Botões das redes sociais estão sem link (Instagram e Linkedin).
+
+ https://br.linkedin.com/company/grupo-marista
+
+https://www.instagram.com/maristadomsilveriobh/
+
+Feito.
+
+==================
+
+- Em "Cada vez mais consciente" está escrito "Marisa Social", o correto não seria "Marista"? 
+
+Feito.
+
+==================
+
+- Inserir feedbacks no formulário.
+
+Mas não acontece nenhum evento. Feedback de que?
+
+==================
+
+Todo o conteúdo não textual que é apresentado ao usuário precisa ter uma alternativa em texto que serve um propósito equivalente. 
+
+linhas 346 ,	347 ,	348 ,	349 ,	187 => Coloquei um texto que representasse o basicão das imagens, mas caso queiram algo mais elaborado, favor passar a descrição das imagens.
+
+linhas 215, 237, 261 => São links. Os botões de accordion. Coloquei o parametro "title".
+
+==================
+
+As informações, a estrutura e as relações transmitidas através de apresentação precisam ser determinadas de forma programática ou estão disponíveis no texto. (linhas 156, 157, 158, 360, 361) => OI?
+
+==================
+
+A finalidade de cada link precisa ser determinada a partir apenas do texto do link ou a partir do texto do link juntamente com o respectivo contexto do link determinado de forma programática (linhas 84 , 91 , 98 ,	105, 121, 128, 135 , 187, 215, 237, 261, 384) => São links. Coloquei o parametro "title", novamente.
+
+==================
+
+A Linguagem humana pré-definida de cada página Web precisa ser determinada de forma programática. (linha 2) => A linha 2 nada mais é que dizer pro navegador que a linguagem do site é em portugues Brasil: <html lang="pt-br">, HTML 5 tambem.. (acredito que a 3A tá usando algo automático pra gerar essas análises. Por isso tá tipo "robô" falando e detectando coisas nada ver). Mas reforcei o idioma usando HTML4:
+<meta http-equiv="Content-Language" content="pt-br">
+
+==================
+
+Toda a funcionalidade do conteúdo precisa ser operável através de uma interface de teclado sem a necessidade de qualquer espaço de tempo entre cada digitação individual, exceto quando a função subjacente requer entrada de dados que dependa da cadeia de movimento do usuário e não apenas dos pontos finais. (linhas 2 , 40 ,	146 ,	355 ,	356 ,359 ,	360 ,	362) => linha 2 é a tag de idioma.. linha 40 é a tag <body> (o que deveria ser navegável pra digitação nessas tags???), linha 146 é "<section class="content">"... Não entendi.
+
+==================
+
+Os componentes que têm a mesma funcionalidade num conjunto de páginas Web precisam ser identificados de forma consistente. (linhas 187 ,	215 ,	237 ,	261) => Já  estão agrupados usando HTML5. São títulos "h2" dentro de um "hgroup" (grupo de títulos). Qual o erro?
+
+<hgroup>
+									<h2 class="yellow">cada vez mais</h2>
+									<h2 class="blue">dedicado</h2>
+								</hgroup>
+
+==================
+
+Deve-se garantir que scripts, Flash, conteúdos dinâmicos e outros elementos programáveis sejam acessíveis. Se não for possível que o elemento programável seja diretamente acessível, deve ser fornecida uma alternativa em HTML para o conteúdo. Assim, é preciso garantir que o conteúdo e as funcionalidades de objetos programáveis sejam acessíveis aos recursos de tecnologia assistiva e que seja possível navegação por teclado. (linhas 397 , 401 , 404 , 407)
+
+Essas linhas são os scripts do site Ricas. Exatamente como o Vini, Alexandre, eu e todo mundo faz. Segue também as linhas para, se puder, me ajudar a ver o erro.
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="root/js/jquery-1.10.2.js"></script>
+
+	<!-- Flickity -->
+	<script src="root/js/flickity.pkgd.min.js"></script>
+
+	<!-- API Google Maps v3 -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEEsKsgOXx6LBy9efqUvV8S0ziWMeeKhM"></script>
+
+	<!-- JS -->
+	<script type="text/javascript" src="root/js/main.min.js"></script>
+
+==================
+
+Deve ser fornecida uma descrição para as imagens da página, utilizando-se o atributo alt. Imagens que não transmitem conteúdo, ou seja, imagens decorativas, devem ser inseridas por CSS. (linhas 346 ,	347 ,	348 ,	349) => Mesma coisa do item 1. Já fiz. 
+
+==================
+
+Ao serem utilizados botões do tipo imagem (input type=”image”), que servem para o mesmo propósito do botão do tipo submit, deve ser fornecida uma descrição textual para o botão através do atributo alt. (linhas 159 ,	362) => Não são do tipo imagem, são do tipo buttons, são botões mesmo e nao imagens. Segue imagem em anexo button-marista.jpg)
+
+==================
+
+Para conteúdo que exigir entrada de dados por parte do usuário, devem ser fornecidas , quando necessário, instruções de preenchimento juntamente com as etiquetas (label). (linhas 157 ,	158 ,	361) => OK, foi feito, mas seguindo o layout apresentado, as labels continuarão escondidas.
+
+==================
+
+Desktop
+
+- As caixas de "Cada vez mais" estão muito próximas entre si, o que está atrapalhando a leiturabilidade. Conseguimos separar mais as mesmas entre si? => Aumentei de 15px para 20px.
+
+- Em "Galeria" a setinha da esquerda precisa sair de cima das fotos. Padronizar com a margem direita. => Feito. Verificar.
+
+- Os ícones de redes sociais do topo estão distorcidos, os círculos estão achatados. => Arrumado. Verificar.
+
+- O formulário está muito grande na horizontal, está passando do limite => Enviar modelo. Nao consegui simular.
+
+==================
+
+Mobile
+
+- O banner superior está quebrado. => É o tamanho da imagem. Como posso fazer?
+
+==================

@@ -137,7 +137,7 @@ header.topo {
   ul.menu li {
     display: inline-block;
     background-color: $blue-dark;
-    border-radius: 50%;
+    border-radius: 100px;
     padding: 5px;
     margin-right: 5px; 
 
@@ -193,7 +193,7 @@ section.content {
       position: relative;
       background-image: url("../../img/hero-small.jpg");
       background-size: cover;
-      height: 940px;
+      height: 801px; //940px
       overflow: hidden;
       @extend .bg;
     }
@@ -201,7 +201,7 @@ section.content {
 
   .content-hero {
     position: absolute;
-    top: 90vh; //50vh
+    top: 70vh; //50vh
     width: 95%; //calc(100%-40px)
     margin: 0 10px;
     padding: 25px 20px;
@@ -223,6 +223,10 @@ section.content {
       position: relative;
       margin: 0 auto;
       overflow: hidden; 
+
+      label {
+        display: none;
+      }
 
       small {
         font-size: 13px;
@@ -253,7 +257,7 @@ section.content {
     background-color: $blue-light;
 
    iframe {
-      width: 80%;
+      width: 100%;
       height: 250px;
       display: block;
       margin: 0 auto; 
@@ -350,6 +354,12 @@ section.content {
     background-color: $blue-dark;
     color: $white; 
 
+    form.form-localizacao {
+      label {
+        display: none;
+      }
+    } 
+
     p {
       display: block;
       font-size: 18px;
@@ -417,7 +427,7 @@ footer {
 }
 
 .btn-accordion  {
-  background-image: url('../../img/plus.jpg');
+  background-image: url('../../img/plus.png');
   background-size: 34px;
   @extend .bg;
   height: 34px;
@@ -490,6 +500,7 @@ footer {
     }
 
     .video iframe {
+      width: 70% !important;
       height: 480px !important; 
     }
 
@@ -537,7 +548,7 @@ footer {
     li {
       display: inline-block;
       width: calc(100%/4);
-      margin-right: 15px; 
+      margin-right: 20px; 
       
       &:last-child {
         margin-right: 0; 
@@ -663,6 +674,13 @@ footer {
 }
 .flickity-page-dots .dot.is-selected {
   background-color: $yellow;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -50px;
+}
+.flickity-prev-next-button.next {
+  right: -50px;
 }
 
 //=== Títulos em imagem ===
